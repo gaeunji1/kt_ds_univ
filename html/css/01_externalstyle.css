@@ -1,0 +1,51 @@
+#header {
+  /* 배경색을 지정한다.*/
+  /*
+    16진수: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+    RGB: #RRGGBB
+
+    black:      #000000     => #000
+    white :     #FFFFFF     -> #FFF
+    red:        #FF0000     -> #F00
+    green :     #00FF00     -> #0F0
+    blue :      #0000FF     -> #00F
+    yellow :    #FFFF00     -> #FF0
+    gray :      #888888     -> #888 
+    */
+  background-color: #ffff00;
+  /*글자의 색상을 지정한다.*/
+  color: #ff00ff;
+  /*글자의 크기를 키운다*/
+  font-size: 32px; /*16px == 기본 크기*/
+  /*글자를 굵게 표현한다*/
+  font-weight: 900; /*400 == 기본 굵기*/
+}
+
+/*
+아이디가 main-container인 태그에 대해
+글자의 크기는 기본크기의 3배로 지정하고
+글자의 색상은 하늘색으로 지정하고
+배경색은 검은색으로 지정한다
+*/
+
+#main-container {
+  font-size: 300%;
+  color: #87ceeb;
+  background-color: #000;
+}
+
+/*
+클래스가 main-container--content 인 태그에 대해
+글자의 크기는 25px
+글자의 색상은 빨간색
+글자의 굵기는 800으로 설정한다.*/
+.main-container--content {
+  font-size: 25px;
+  color: #ff0000;
+  font-weight: 800;
+}
+
+.footer-links--link {
+  /*글자들을 가운데로 정렬해본다.*/
+  text-align: center;
+}
