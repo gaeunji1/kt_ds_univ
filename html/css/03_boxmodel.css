@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+.contentbox {
+  /*너비를 지정한다.*/
+  width: 350px;
+
+  /*높이를 지정한다.*/
+  height: 400px;
+
+  /*테두리를 지정한다.*/
+  border: 5px dashed #f00;
+
+  /*테두리와 컨텐츠 사이의 여백을 지정한다.*/
+  /*위쪽 여백 : 30px, 좌측여백 : 50px
+   아래쪽 여백 : 80px, 우측 여백: 70px */
+  padding: 30px 70px 80px 50px;
+}
+
+.borderbox {
+  /*박스의 크기 기준으로 테두리로 결정시킨다. 기본값 : content-box*/
+  box-sizing: border-box;
+
+  /*너비를 지정한다.*/
+  width: 350px;
+
+  /*높이를 지정한다.*/
+  height: 400px;
+
+  /*테두리를 지정한다.*/
+  border: 5px dashed #f00;
+
+  /*테두리와 컨텐츠 사이의 여백을 지정한다.*/
+  /*위쪽 여백 : 30px, 좌측여백 : 50px
+   아래쪽 여백 : 80px, 우측 여백: 70px */
+  padding: 30px 70px 80px 50px;
+}
