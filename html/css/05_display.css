@@ -1,0 +1,30 @@
+.to-inline {
+  display: inline;
+  /*
+    inline display는 컨텐츠내용만큼의 박스가 생성된다.
+    inline display 태그들이 연달아 있을 경우 화면에는 한 줄에 여러 태그가 노출된다.
+    크기를 변경할 수 없다.
+    padding, margin, width, height 등 크기를 변경시키는 CSS가 모두 무효화된다.
+  */
+}
+.to-block {
+  display: block;
+  /*
+  block display tag는 부모태그의 크기만큼 너비를 꽉 채운다.
+  한 줄에 여러 개의 tag를 노출 시킬 수 없다.
+  크기 변경은 가능하다!
+  padding, margin, width, height등을 적용 가능하다.
+  */
+}
+.to-none {
+  display: none;
+  /*
+  None Display Tag는 화면에 태그를 노출 시키지 않는다.
+  */
+}
+.to-line-block {
+  display: inline-block;
+  /*기본 특징은 inline display와 동일하다.
+  다른 점은 크기 변경이 가능하다!
+  padding, margin, width, height등을 적용할 수 있다.*/
+}

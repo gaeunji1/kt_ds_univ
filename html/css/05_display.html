@@ -3,29 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <title>Display 실습</title>
+    <link rel="stylesheet" href="05_display.css" type="text/css" />
   </head>
   <body>
     <h1>Block Display Tags</h1>
-    <div>Div는 Block Display Tag입니다.</div>
-    <p>P는 Block Display Tag입니다.</p>
-    <h1>Headline은 Block Display Tag입니다.</h1>
-    <ul>
-      <li>ul / ol 과 li는 Block Display Tag입니다.</li>
-    </ul>
+    <div>
+      <div class="to-inline">Div는 Block Display Tag입니다.</div>
+      <p class="to-inline">P는 Block Display Tag입니다.</p>
+      <h1 class="to-inline">Headline은 Block Display Tag입니다.</h1>
+      <ul>
+        <li>ul / ol 과 li는 Block Display Tag입니다.</li>
+      </ul>
+    </div>
 
     <h1>Inline Display Tags</h1>
     <div>
-      <a href="#">a는 Inline Display Tag입니다.</a>
-      <span>span은 Inline Display Tag입니다.</span>
+      <a class="to-block" href="#">a는 Inline Display Tag입니다.</a>
+      <span class="to-block">span은 Inline Display Tag입니다.</span>
     </div>
 
     <h1>Inline-Block Display Tags</h1>
     <div>
-      <img src="asrgkjfhmkads" />
-      <img src="asrgkjfhmkads" />
-      <img src="asrgkjfhmkads" />
-      <input type="text" />
-      <button>Button은 Inline-Block Tag입니다.</button>
+      <img class="to-none" src="asrgkjfhmkads" />
+      <img class="to-none" src="asrgkjfhmkads" />
+      <img class="to-none" src="asrgkjfhmkads" />
+      <input class="to-none" type="text" />
+      <button class="to-none">Button은 Inline-Block Tag입니다.</button>
+    </div>
+
+    <h1>None Display Tags</h1>
+    <div>
+      <template class="to-inline-block"
+        >템플릿은 None Display Tag입니다.</template
+      >
+      <dialog class="to-inline-block">Dialog는 None Display Tag입니다.</dialog>
+      <input class="to-inline-block" type="hidden" />
     </div>
   </body>
 </html>
