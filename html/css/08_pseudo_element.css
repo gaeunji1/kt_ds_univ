@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.navigation {
+  padding: 0;
+  margin: 0;
+}
+.menu-item {
+  display: inline-block;
+}
+
+.menu-item::before {
+  content: "/";
+  margin: 0 10px;
+  color: #ccc;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.menu-item:first-child::before {
+  content: "";
+  margin: 0;
+}
+
+.menu-item:hover::before {
+  border-bottom: 3px solid rgb(201, 129, 129);
+}

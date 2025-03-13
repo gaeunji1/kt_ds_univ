@@ -1,0 +1,54 @@
+a{
+    color:#333;
+    text-decoration: none;
+}
+
+/*anchor 태그에 마우스를 올렸을 때*/
+a:hover{
+    color:#f00;
+    text-decoration: underline;
+}
+
+/*anchor 태그를 누르고 있을 때*/
+a:active{
+    color:#00f;
+    text-decoration: line-through;
+}
+
+/*이미 방문했던 anchor 태그일 때*/
+a:visited{
+    color:#f00;
+}
+.interactive-button{
+    background-color: #ffffff;
+    border: 1px solid #888;
+    border-radius: 7px;
+    padding:10px;
+}
+
+.interactive-button:hover{
+    color:#8484f1;
+    border:1px solid #8484f1;
+    background-color: #e1e1f4;
+}
+
+.interactive-button:active{
+    color:#ea84f1;
+    border:1px solid #ea84f1;
+    background-color: #eecaf1;
+}
+
+.interactive-button:focus{
+    color:#f1f184;
+    border:1px solid #f1f184;
+    background-color: #e9e9cc;
+    outline: 0;
+}
+
+a:first-child{
+    font-size: 32px;
+}
+
+.interactive-button:last-child{
+    color:#0f0;
+}
