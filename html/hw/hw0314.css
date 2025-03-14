@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+.coupang-box {
+  width: 700px;
+  border: 1px solid #888;
+  padding: 15px;
+  margin-bottom: 300pc;
+}
+
+.product-list {
+  padding: 0;
+  margin: 0;
+}
+
+.half-box {
+  display: inline-block;
+  width: 47%;
+  margin: 0 15px 15px 0;
+  border: 1px solid #888;
+}
+
+.quarter-box {
+  display: inline-block;
+  width: 22.3%;
+  margin: 0 15px 15px 0;
+  border: 1px solid #888;
+}
+
+.product-image {
+  width: 100%;
+}

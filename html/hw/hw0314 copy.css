@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+.coupang-box {
+  width: 700px;
+  border: 1px solid #888;
+  padding: 15px;
+  margin-bottom: 300pc;
+}
+
+.product-list {
+  padding: 0;
+  margin: 0;
+}
+
+.half-box {
+  display: inline-block;
+  width: 47%;
+  margin: 0 15px 15px 0;
+  border: 1px solid #888;
+}
+
+.quarter-box {
+  display: inline-block;
+  width: 22.3%;
+  margin: 0 15px 15px 0;
+  border: 1px solid #888;
+}
+
+.product-image {
+  width: 100%;
+}
+.relative {
+  position: relative;
+  text-align: center;
+}
+
+.full-bottom-absolute {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #0005;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 500;
+}
