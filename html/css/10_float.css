@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.menu-wrapper {
+  background-color: #0ff;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.menu-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu-list::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.menu {
+  background-color: #f00;
+  float: left;
+}
+
+.menu::after {
+  content: "";
+  margin: 0 10px 0 0;
+}
+
+.menu:first-child::after {
+  margin: 0;
+}
+
+.menu:nth-child::after {
+  margin: 0;
+}
+
+.left-menu {
+  float: left;
+}
+
+.right-menu {
+  float: right;
+}
