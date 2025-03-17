@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url("naver_sprite.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  margin: 0;
+}
+
+.banner {
+  background-image: url("sea.avif");
+  width: 90%;
+  min-width: 500px;
+  max-width: 900px;
+  min-height: 500px;
+
+  /* background-size: cover; */
+  background-position: 0 -280px;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  margin: 0px;
+  padding: 300px 0 0 50px;
+}
+
+.icon-list {
+  padding: 0;
+  margin: 0;
+}
+
+/*자식을 의미함*/
+.icon-list > li {
+  background-image: url(naver_sprite.png);
+  background-position: -312px -288px;
+  position: relative;
+  width: 86px;
+  height: 86px;
+  display: inline-block;
+  padding: 15px;
+}
+
+.mail {
+  background-image: url(naver_sprite.png);
+  /* background-position: -300px -300px; */
+  background-position: -425px -453px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.cafe {
+  background-image: url(naver_sprite.png);
+  background-position: -99px -454px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.blog {
+  background-image: url(naver_sprite.png);
+  background-position: -14px -456px;
+  display: inline-block;
+  width: 52px;
+  height: 50px;
+}
+
+.store {
+  background-image: url(naver_sprite.png);
+  background-position: -95px -546px;
+  display: inline-block;
+  width: 54px;
+  height: 50px;
+}

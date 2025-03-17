@@ -1,0 +1,12 @@
+.static-box {
+  background-color: #666;
+  width: 100px;
+  height: 100px;
+  color: #00f;
+  overflow: hidden;
+}
+.flexible-box {
+  background-color: #eb6c6c;
+  min-width: 100px;
+  min-height: 100px;
+}
