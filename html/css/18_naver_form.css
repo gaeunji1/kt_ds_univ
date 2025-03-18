@@ -82,3 +82,42 @@ body {
     color: #fff;
     margin-top: 1rem;
 }
+
+.require{
+    color:#08c008;
+    font-weight: 900;
+}
+
+.optional{
+    color: #ccc;
+    font-weight: 900;
+}
+
+.link{
+    font-size:0.6rem;
+    color:#ccc;
+    text-decoration: none;
+}
+
+.children{
+    text-decoration: none;
+    color:#333;
+    font-weight: 900;
+}
+
+input[type="checkbox"]{
+    appearance:none;
+    width:1.5rem;
+    height:1.5rem;
+    background-color: #aaa;
+    border:1px solid #888;
+    border-radius: 50%;
+    background-image: url("naver_sprite.png");
+    background-position: -903px -787px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #08c008;
+    border: 1px solid #08c008;
+}
