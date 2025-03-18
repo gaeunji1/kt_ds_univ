@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #333;
+}
+
+.wrapper {
+    width: 31.25rem;
+    margin: 0 auto;
+    padding: 0.625rem;
+}
+
+.wrapper label {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0.625rem;
+}
+
+.wrapper > div:first-child > label {
+    font-size: 1.3rem;
+}
+
+.wrapper > div > div {
+    padding: 0.625rem;
+    margin-left: 2rem;
+    border: 1px solid #888;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    overflow: auto;
+    max-height: 6.25rem;
+}
+
+.wrapper .privarcy-title {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    max-height: 100%;
+    border: 0;
+}
+
+.wrapper .privarcy-title > div:first-child {
+    display: inline-block;
+}
+
+.wrapper .privarcy-title > div:last-child {
+    display: inline-block;
+    width: 43%;
+    text-align: right;
+    font-size: 0.65rem;
+}
+
+.wrapper .privarcy-title > div:last-child > a {
+    padding: 0.4rem;
+    border: 1px solid #aaa;
+    border-radius: 1.3rem;
+}
+
+#privarcy2 ~ div {
+    /* id 가 privarcy2 인 인접형제중에서 div를 찾아와라
+    id는 문서내에서 유일한 값을 가지기 때문에 한번에 접근한다. */
+    border: 0;
+    padding: 0;
+}
+
+#privarcy2 ~ div > label {
+    padding: 0;
+    font-weight: 300;
+}
+
+.wrapper > div:last-child > button {
+    display: block;
+    width: 100%;
+    padding: 0.625rem;
+    background-color: #8990a0;
+    border: 0;
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 1rem;
+}

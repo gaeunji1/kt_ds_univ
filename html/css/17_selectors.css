@@ -1,0 +1,41 @@
+.header p{
+    background-color: #f00;
+}
+
+.header > ul{
+    padding:0;
+    margin : 0 ;
+}
+
+li{
+    display:inline-block;
+}
+
+.header > ul > li{
+    display: inline-block;
+}
+
+.header > p + div{
+    color: blue;
+    font-weight: 900;
+    background-color: yellow;
+    padding: 2rem;
+}
+
+.header > p ~ img {
+    border: 3px solid #f00;
+    width: 3rem;
+    height: 3rem;
+}
+
+div[class="header"]{
+    color: #0f0;
+    font-weight: 900;
+}
+
+
+/*Group Selecotr*/
+.header > ul > li,
+.header > ul > li > ol > li {
+    font-size: 0.5rem;
+}
