@@ -1,0 +1,19 @@
+.flex-list{
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    background-color: #e66b6b;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    align-content: stretch;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-list > li {
+    background-color: #9595fa;
+    padding: 1rem;
+    margin: 0.5rem;
+}

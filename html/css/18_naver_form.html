@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="18_naver_form.css" type="text/css" />
     <title>Naver</title>
+    
   </head>
   <body>
     <div class="wrapper">
@@ -76,6 +77,34 @@
       <div>
         <button>다음</button>
       </div>
+    </div>
+
+    <div class="regist-wrapper">
+        <div>
+          실명 인증된 아이디로 가입
+          <input type="checkbox" />
+        </div>
+        <div>
+          <input type="text" placeholder="아이디"/>
+        </div>
+        <div>
+          <input type="password" placeholder="비밀번호"/>
+          <input type="checkbox"/>
+        </div>
+        <div>
+          <input type="email" placeholder="[선택] 이메일주소(비밀번호 찾기 등 본인 확인용)"/>
+        </div>
+        <div>
+          <input id="male" name="gender" type="radio"/>
+          <label for="male">남자</label>
+          <input id="female" name="gender" type="radio"/>
+          <label for="female">여자</label>
+
+          <input id="local" name="country" type="radio"/>
+          <label for="local">내국인</label>
+          <input id="foreigner" name="country" type="radio"/>
+          <label for="foreigner">외국인</label>
+        </div>
     </div>
   </body>
 </html>

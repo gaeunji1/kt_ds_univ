@@ -121,3 +121,167 @@ input[type="checkbox"]:checked{
     background-color: #08c008;
     border: 1px solid #08c008;
 }
+.regist-wrapper {
+    width: 31.25rem;
+    margin: 0 auto;
+    padding: 0.625rem;
+  }
+  
+  .regist-wrapper > div:first-child {
+    text-align: right;
+    font-size: 0.8rem;
+  }
+  
+  .regist-wrapper > div:first-child > input[type="checkbox"] {
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: #fff;
+    border: 0;
+    background-image: url("naver_regist_sprite.png");
+    background-repeat: none;
+    background-position: -685px -497px;
+  }
+  
+.regist-wrapper > div:first-child > input[type="checkbox"]:checked {
+   background-position: -685px -541px;
+ }
+  
+.regist-wrapper > div:nth-child(2) > input[type="text"] {
+  width: 70%;
+  padding: 0.625rem;
+  outline: 0;
+  border: 0;
+}
+
+.regist-wrapper > div:nth-child(3) > input[type="password"] {
+    width: 70%;
+    padding: 0.625rem;
+    outline: 0;
+    border: 0;
+}
+
+.regist-wrapper > div:nth-child(4) > input[type="email"] {
+    width: 70%;
+    padding: 0.625rem;
+    outline: 0;
+    border: 0;
+}
+.regist-wrapper > div:nth-child(2) {
+  border: 1px solid #00c008;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+  
+  .regist-wrapper > div:nth-child(2)::before {
+    content: "";
+    vertical-align: middle;
+    background-image: url("naver_regist_sprite.png");
+    background-repeat: no-repeat;
+    background-position: -695px -140px;
+    display: inline-block;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  .regist-wrapper > div:nth-child(4)::before {
+    content: "";
+    vertical-align: middle;
+    background-image: url("naver_regist_sprite.png");
+    background-repeat: no-repeat;
+    background-position: -203px -602px;
+    display: inline-block;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+
+  .regist-wrapper > div:nth-child(3)::before {
+    content: "";
+    vertical-align: middle;
+    background-image: url("naver_regist_sprite.png");
+    background-repeat: no-repeat;
+    background-position: -632px -12px;
+    display: inline-block;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  
+  .regist-wrapper > div:nth-child(2)::after {
+    content: "@naver.com";
+  }
+  
+  .regist-wrapper > div:nth-child(3),
+  .regist-wrapper > div:nth-child(4),
+  .regist-wrapper > div:nth-child(5) {
+    border: 1px solid #00c008;
+    border-top: 0px;
+  }
+  
+  .regist-wrapper > div:nth-child(5) {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    text-align: center;
+    padding: 0.625rem;
+    font-size: 0rem;
+  }
+  
+
+  .regist-wrapper > div:nth-child(3) > input[type="checkbox"] {
+    vertical-align: middle;
+    background-color: #fff;
+    background-image: url("naver_regist_sprite.png");
+    background-repeat: no-repeat;
+    background-position: -524px -538px;
+    border-radius: 0;
+    border: 0;
+    display: inline-block;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  
+  .regist-wrapper > div:nth-child(3) > input[type="checkbox"]:checked {
+    background-position: -524px -602px;
+  }
+
+.regist-wrapper > div:nth-child(5) > input[type="radio"]{
+    display: none;
+}
+
+.regist-wrapper > div:last-child > input[type="radio"] +label {
+    display: inline-block;
+    padding: 0.625rem;
+    border: 1px solid #08c008;
+    color:#08c008;
+    width: 6rem;
+    text-align: center;
+    font-size: 1rem;
+    border-right: 0;    
+}
+
+.regist-wrapper > div:last-child > input[type="radio"] +label:last-child{
+    border-right: 1px solid #08c008;
+}
+
+.regist-wrapper > div:last-child > input[type="radio"][name="gender"]:last-of-type +label{
+    margin-right: 1rem ;
+    border-right: 1px solid #08c008;
+}
+
+.regist-wrapper > div:last-child > input[type="radio"][name="gender"]:nth-of-type(2) +label{
+    margin-right: 2rem ;
+    border-right: 1px solid #08c008;
+}
+
+.regist-wrapper > div:nth-child(5) > input[type="radio"] +label {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.regist-wrapper > div:nth-child(5) > input[type="radio"]:nth-of-type(2n) +label {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.regist-wrapper > div:nth-child(5) > input[type="radio"]:checked +label {
+    color: red;
+}
