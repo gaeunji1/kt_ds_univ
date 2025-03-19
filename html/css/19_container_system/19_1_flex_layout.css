@@ -1,176 +1,168 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    color: #333;
-  }
-  
-  .basis,
-  .basis-grow,
-  .basis-shrink,
-  .basis-grow-shrink {
-    /*flex-container style*/
-    display: flex;
-    background-color: #d9acac;
-  }
-  
-  .basis > div,
-  .basis-grow > div,
-  .basis-shrink > div,
-  .basis-grow-shrink > div {
-    /*flex-item style*/
-    flex-basis: 10rem;
-  }
-  
-  .basis-grow > div {
-    /*flex-item style*/
-    /* flex-grow: 0; */
-  }
-  
-  .basis-grow > div:first-child {
-    /* flex item style */
-    flex-grow: 1;
-  }
-  
-  .basis-grow > div:nth-child(2) {
-    /* flex item style */
-    flex-grow: 2;
-  }
-  
-  .basis-grow > div:last-child {
-    /* flex item style */
-    flex-grow: 3;
-  }
-  
-  .basis-shrink > div {
-    /*flex-item style*/
-    /*basis보다 줄어들지 말아라*/
-    /* flex-shrink: 0; */
-  }
-  
-  .basis-shrink > div:first-child {
-    /*flex container가 줄어든 배율의 1배만큼 줄어라*/
-    flex-shrink: 1;
-  }
-  
-  .basis-shrink > div:nth-child(2) {
-    /*flex container가 줄어든 배율의 2배만큼 줄어라*/
-    flex-shrink: 2;
-  }
-  
-  .basis-shrink > div:last-child {
-    /*flex container가 줄어든 배율의 3배만큼 줄어라*/
-    flex-shrink: 3;
-  }
-  
-  .basis-grow-shrink > div {
-    flex-basis: 14rem;
-    flex-grow: 1;
-    flex-shrink: 0;
-  }
-  
-  .wrapper {
-    width: 80%;
-    margin: 0 auto;
-    background-color: #ccc;
-  }
-  
-  .header-top {
-    display: flex;
-    height: 4rem;
-    background-color: #aaa;
-    padding: 0.8rem;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .header-menu-list > ul {
-    /*flex-container*/
-    display: flex;
-    padding: 0.8rem;
-    margin: 0;
-    list-style-type: none;
-    background-color: #bbb;
-  }
-  
-  .header-menu-list > ul > li {
-    /*flex-item*/
-    flex-basis: 4rem;
-    /* margin-right: 0.8rem; */
-    flex-shrink: 0;
-  }
-  
-  /* .header-menu-list > ul > li:last-child {
-    margin-right: 0;
-  } */
-  
-  .main {
-    display: flex;
-    background-color: #999;
-    padding: 0.8rem;
-  }
-  
-  .main-menu-list {
-    /*flex-item*/
-    flex-basis: 7.5rem;
-    flex-shrink: 0;
-    margin-right: 0.8rem;
-  }
-  
-  .main-menu-list > ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    background-color: #888;
-  }
-  
-  .main-menu-list > ul > li {
-    /*flex-item*/
-    /* flex-basis: 1.8rem; */
-    /* margin-top: 0.8rem; */
-    /* align-self: center; */
-    padding: 0.4rem;
-  }
-  
-  /* .main-menu-list > ul > li:last-child {
-    margin-bottom: 0.8rem;
-  } */
-  
-  .main-contents {
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 23rem;
-  }
-  
-  .main-contents-wrapper {
-    background-color: #fff;
-  }
-  
-  .footer {
-    text-align: center;
-    background-color: #000;
-    color: #fff;
-    padding: 1rem;
-  }
-  
-  .footer > ul {
-    display: flex;
-    margin: 0;
-    margin-top: 2rem;
-    padding: 0;
-    list-style-type: none;
-    justify-content: center;
-  }
-  
-  .footer > ul > li {
-    margin-right: 0.8rem;
-  }
-  
-  .footer > ul > li:last-child {
-    margin-right: 0;
-  }
-  
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #333;
+}
+
+.basis,
+.basis-grow,
+.basis-shrink,
+.basis-grow-shrink {
+  /*flex container style*/
+  display: flex;
+  background-color: #d9acac;
+}
+
+.basis > div,
+.basis-grow > div,
+.basis-shrink > div,
+.basis-grow-shrink > div {
+  /*flex item style*/
+  flex-basis: 10rem;
+}
+
+.basis-grow > div {
+  /*flex item style*/
+  /* flex-grow: 0; */
+}
+
+.basis-grow > div:first-child {
+  /*flex item style*/
+  flex-grow: 1;
+}
+
+.basis-grow > div:nth-child(2) {
+  /*flex item style*/
+  flex-grow: 2;
+}
+
+.basis-grow > div:last-child {
+  /*flex item style*/
+  flex-grow: 3;
+}
+
+.basis-shrink > div {
+  /*flex item style*/
+  /*basis보다 줄어들지 말아라.*/
+  /* flex-shrink: 0; */
+}
+
+.basis-shrink > div:first-child {
+  /*flex container가 줄어든 배율의 1배만큼 줄어라.*/
+  flex-shrink: 1;
+}
+
+.basis-shrink > div:nth-child(2) {
+  /*flex container가 줄어든 배율의 2배만큼 줄어라.*/
+  flex-shrink: 2;
+}
+
+.basis-shrink > div:last-child {
+  /*flex container가 줄어든 배율의 3배만큼 줄어라.*/
+  flex-shrink: 3;
+}
+
+.basis-grow-shrink > div {
+  flex-basis: 14rem;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.wrapper {
+  width: 80%;
+  min-width: 40.25rem;
+  margin: 0 auto;
+  background-color: #ccc;
+}
+
+.header-top {
+  display: flex;
+  height: 4rem;
+  background-color: #aaa;
+  padding: 0.8rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu-list > ul {
+  /*flex container*/
+  display: flex;
+  padding: 0.8rem;
+  margin: 0;
+  list-style-type: none;
+  background-color: #bbb;
+}
+
+.header-menu-list > ul > li {
+  /*flex item*/
+  flex-basis: 4rem;
+  flex-shrink: 0;
+}
+
+.main {
+  display: flex;
+  background-color: #999;
+  padding: 0.8rem;
+}
+
+.main-menu-list {
+  /*flex item*/
+  flex-basis: 7.5rem;
+  flex-shrink: 0;
+
+  margin-right: 0.8rem;
+}
+
+.main-menu-list > ul {
+  display: flex;
+
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: #888;
+}
+
+.main-menu-list > ul > li {
+  /*flex item*/
+  /* flex-basis: 1.8rem; */
+  /* align-self: center; */
+  padding: 0.4rem;
+}
+
+.main-contents {
+  flex-basis: 29rem;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.main-contents-wrapper {
+  background-color: #fff;
+}
+
+.footer {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+}
+
+.footer > ul {
+  display: flex;
+  margin: 0;
+  margin-top: 2rem;
+  padding: 0;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.footer > ul > li {
+  margin-right: 0.8rem;
+}
+
+.footer > ul > li:last-child {
+  margin-right: 0;
+}
