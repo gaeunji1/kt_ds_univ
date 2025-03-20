@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #333;
+}
+
+.regist-wrapper {
+  width: 31.25rem;
+  margin: 0 auto;
+  padding: 0.625rem;
+  /*가로로 나열되던거를 column을 지정해서 세로로 정렬시킴*/
+  display: flex;
+  flex-direction: column;
+}
+
+.regist-wrapper > div:nth-child(1) {
+  border: 1px solid #00c008;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.regist-wrapper > div:nth-child(1) > input[type='name'] {
+  border: 0;
+  padding: 0.625rem;
+}
+
+.regist-wrapper > div:nth-child(2) > input[type='birthday'] {
+  border: 0;
+  padding: 0.625rem;
+}
+
+.regist-wrapper > div:nth-child(3) > input[type='tel-company'] {
+  width: 70%;
+  padding: 0.625rem;
+  outline: 0;
+  border: 0;
+}
+
+.regist-wrapper > div:nth-child(1),
+.regist-wrapper > div:nth-child(2),
+.regist-wrapper > div:nth-child(3),
+.regist-wrapper > div:nth-child(4) {
+  border: 1px solid #00c008;
+  padding-left: 15px;
+  border-bottom: 0;
+}
+
+.regist-wrapper > div:nth-child(4) {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  text-align: center;
+  padding: 0.625rem;
+  font-size: 0rem;
+  /*가로로 나열되게 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid #00c008;
+}
+
+.regist-wrapper > div:nth-child(4) > input[type='radio'] {
+  display: none;
+}
+
+.regist-wrapper > div:last-child > input[type='radio'] + label {
+  display: flex;
+  flex-direction: column;
+  padding: 0.625rem;
+  border: 1px solid #08c008;
+  color: #08c008;
+  width: 6rem;
+  font-size: 1rem;
+  border-right: 0;
+}
+
+.regist-wrapper > div:last-child > input[type='radio'] + label:last-child {
+  border-right: 1px solid #08c008;
+}
+
+.regist-wrapper > div:last-child > input[type='radio'][name='gender']:last-of-type + label {
+  margin-right: 1rem;
+  border-right: 1px solid #08c008;
+}
+
+.regist-wrapper > div:last-child > input[type='radio'][name='gender']:nth-of-type(2) + label {
+  margin-right: 2rem;
+  border-right: 1px solid #08c008;
+}
+
+.regist-wrapper > div:nth-child(4) > input[type='radio'] + label {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.regist-wrapper > div:nth-child(4) > input[type='radio']:nth-of-type(2n) + label {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.regist-wrapper > div:nth-child(4) > input[type='radio']:checked + label {
+  color: red;
+}

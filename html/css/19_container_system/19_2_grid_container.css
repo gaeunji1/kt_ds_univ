@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    color: #333;
+}
+
+.grid-container{
+    display: grid;
+    /*grid의 행의 개수 및 크기를 설정한다.*/
+    /*-> 첫번쨰 줄의 크기 두번째 줄의 크기 마지막 줄의 크기
+    그리드의 크기를 고정시키는 방법
+            :grid-template-rows: 12.5rem 12.5rem 25rem; */
+    /*그리드의 크기를 비율로 만드는 방법
+            : 모든 행들의 높이가 동일하도록 희망한다. 1/3이 되길*/
+    grid-template-rows: 1fr 5fr minmax(1rem, auto);
+
+    /*grid의 열의 개수 및 크기를 설정한다.*/
+    grid-template-columns: minmax(0.5rem, 2rem) 5fr 1fr;
+    background-color: #edaded;
+    border: 1px solid #999;
+    gap: 1rem
+}
+
+.grid-container > div:first-child{
+    background-color: #999;
+}
+
+.grid-container > div:nth-child(5){
+    background-color: #999;
+}
+
+.grid-container > div:nth-child(8){
+    background-color: #ffff86;
+}
+
+.grid-container > div:nth-child(9){
+    background-color: #fa7c7c;
+}

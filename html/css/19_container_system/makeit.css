@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    color: #333;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 3fr 15fr 0.3fr 3fr;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    gap: 0.625rem;
+
+    width: 80%;
+    min-width: 20rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grid-container > div {
+    border: 1px solid #999;
+    padding: 0.625rem;
+}
+
+.grid-container > .header{
+    grid-column: 1 / -1;/*2부터 4까지*/
+    background-color: #fe9afe;
+    min-height: 20px;    
+}
+
+.grid-container > .sidebar,
+.grid-container > .sidebar2{
+    background-color: #ddd;
+}
+
+
+.grid-container > .content{
+    min-height: 30rem;
+}
+
+.grid-container> .empty-box{
+    grid-row: 3/ 4;
+    grid-column: 1/-1;
+    border: 0px;
+    height: 2px;
+}
+
+.grid-container> .footer{
+    grid-row: 4/ -1;
+    grid-column: 1/4;
+    background-color: #fe9afe;
+}
