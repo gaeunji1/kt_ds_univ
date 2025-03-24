@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jQuery Adventures</title>
     <link rel="stylesheet" href="./ch04.css" />
-</head>
-<body>
+    <script src="jquery-3.7.1.min.js" type="text/javascript"></script>
+    <script src="ch04_event.js" type="text/javascript"></script>
+  </head>
+  <body>
     <h1 class="title">Vacation Packages</h1>
     <h4 class="sub-title">jQuery Travels</h4>
-    
-    <div class="package">
-        <h2 class="package-title">Hawaiian Vacation</h2>
-        <ul class="package-deal">
-            <li class="package-deal-comment-title">Comments on this deal:</li>
-            <li class="package-deal-comment">"Amazing Deal!"</li>
-            <li class="package-deal-comment">"Can't wait to take this trip</li>
-        </ul>
 
-        <div class="package-button-area">
-            <button class="package-green-button">GET PRICE</button>
-        </div>
+    <div class="package">
+      <h2 class="package-title">Hawaiian Vacation</h2>
+      <ul class="package-deal">
+        <li class="package-deal-comment-title">Comments on this deal:</li>
+        <li class="package-deal-comment">"Amazing Deal!"</li>
+        <li class="package-deal-comment">"Can't wait to take this trip</li>
+      </ul>
+
+      <!--
+        $(".package-button-area").before("<p>$399.99</p>"); 
+      -->
+      <div class="package-button-area">
+        <!--
+        $(".package-button-area").prepend("<p>$399.99</p>"); 
+        -->
+        <button class="package-green-button">GET PRICE</button>
+        <!--여기에 텍스트를 추가한다.-->
+        <!--
+        $(".package-button-area").append("<p>$399.99</p>"); 
+        -->
+        <!-- <p>$399.99</p> -->
+      </div>
+      <!--
+        $(".package-button-area").after("<p>$399.99</p>"); 
+      -->
     </div>
 
-    <div class="contact">Call us at 1-555-jquery-air to make a reservation today!</div>
-</body>
+    <div class="contact">
+      Call us at 1-555-jquery-air to make a reservation today!
+    </div>
+  </body>
 </html>
